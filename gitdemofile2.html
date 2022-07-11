@@ -1,0 +1,302 @@
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO
+$ git init
+Initialized empty Git repository in D:/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO/.git/
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO (master)
+$ touch demo1.html
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO (master)
+$ git --version
+git version 2.37.0.windows.1
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO (master)
+$ git config --local user.name "satish patil"
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO (master)
+$ git config --local.email"satishpatil0802@gmail.com"
+error: unknown option `local.emailsatishpatil0802@gmail.com'
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO (master)
+$ git config --local.email "satishpatil0802@gmail.com"
+error: unknown option `local.email'
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO (master)
+$ git config --local user.email "satishpatil0802@gmail.com"
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO (master)
+$ git config --local user.email
+satishpatil0802@gmail.com
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO (master)
+$ git config --local user.name
+satish patil
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO (master)
+$ git config --list --show-origin
+file:C:/Program Files/Git/etc/gitconfig diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig http.sslbackend=openssl
+file:C:/Program Files/Git/etc/gitconfig http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+file:C:/Program Files/Git/etc/gitconfig core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig core.symlinks=false
+file:C:/Program Files/Git/etc/gitconfig pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig credential.helper=manager-core
+file:C:/Program Files/Git/etc/gitconfig credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig init.defaultbranch=master
+file:C:/Users/Satish/.gitconfig credential.https://gitlab.com.provider=generic
+file:C:/Users/Satish/.gitconfig user.name=satish
+file:C:/Users/Satish/.gitconfig user.email=satishpatil0802@gmail.com
+file:.git/config        core.repositoryformatversion=0
+file:.git/config        core.filemode=false
+file:.git/config        core.bare=false
+:wq
+
+
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO (master)
+$ ls*
+bash: ls*: command not found
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO (master)
+$ ls *
+demo1.html  gitdemofile1.html  gitdemofile2.html
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO (master)
+$ cd dir
+bash: cd: dir: No such file or directory
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO (master)
+$ mkdir dir
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO (master)
+$ cd dir
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO/dir (master)
+$ touch demo.c demo.java demo.js demo.html demo.css
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO/dir (master)
+$ ls *
+demo.c  demo.css  demo.html  demo.java  demo.js
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO/dir (master)
+$ git add .
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO/dir (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   demo.c
+        new file:   demo.css
+        new file:   demo.html
+        new file:   demo.java
+        new file:   demo.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../demo1.html
+        ../gitdemofile1.html
+        ../gitdemofile2.html
+
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO/dir (master)
+$ git rm --chached demo.c
+error: unknown option `chached'
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+    --sparse              allow updating entries outside of the sparse-checkout cone
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO/dir (master)
+$ git rm-- chached demo.c
+git: 'rm--' is not a git command. See 'git --help'.
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO/dir (master)
+$ ^C
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO/dir (master)
+$ git rm --chched demo.c
+error: unknown option `chched'
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+    --sparse              allow updating entries outside of the sparse-checkout cone
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO/dir (master)
+$ git rm --chched demo.c
+error: unknown option `chched'
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+    --sparse              allow updating entries outside of the sparse-checkout cone
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO/dir (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   demo.c
+        new file:   demo.css
+        new file:   demo.html
+        new file:   demo.java
+        new file:   demo.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../demo1.html
+        ../gitdemofile1.html
+        ../gitdemofile2.html
+
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO/dir (master)
+$ git rm --cached demo.c
+rm 'dir/demo.c'
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO/dir (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   demo.css
+        new file:   demo.html
+        new file:   demo.java
+        new file:   demo.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../demo1.html
+        demo.c
+        ../gitdemofile1.html
+        ../gitdemofile2.html
+
+
+Satish@LENOVO MINGW64 /d/CDAC_HYDERABAD/SOFTWARE TECHNOLOGIES/GIT DEMO/dir (master)
+$
